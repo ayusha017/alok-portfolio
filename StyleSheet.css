@@ -156,6 +156,7 @@ a {
     box-shadow: 0 0 29px white;
   }
   .icons{
+   margin-top: 50px;
    bottom: 0;
    transition: 0.4s ease-in-out;
   }
