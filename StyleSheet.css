@@ -156,7 +156,6 @@ a {
     box-shadow: 0 0 29px white;
   }
   .icons{
-   position:relative;
    bottom: 0;
    transition: 0.4s ease-in-out;
   }
