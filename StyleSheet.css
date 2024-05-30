@@ -1,0 +1,369 @@
+@import
+url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+a {
+    text-emphasis-color:inherit;
+}
+.topnav {
+    overflow: hidden;
+    background-color: black;
+  }
+  .topnav a {
+    float:right ;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: white;
+    border-bottom: 3px solid transparent;
+  }
+  .topnav a:hover,
+  .topnav a.active {
+    color:rgb(255, 18, 18);
+    border-bottom: 3px solid rgb(255, 18, 18);
+  }
+  .alok{
+    
+    float: right;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+  }
+  .alokimg{
+    box-shadow: 0 0 25px white;
+    position: relative;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    transition: 0.4s ease-in-out;
+  }
+  .alokimg:hover{
+    box-shadow: 0 0 55px white;
+  }
+  .type-out span::before{
+    font-size: 2rem;
+    color: rgb(255, 18, 18);
+    content: "A Graphic Designer...";
+    animation: words 25s infinite;
+  }
+  .type-out span{
+    position: relative;
+  }
+  .type-out span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    border-left: 3px solid orange;
+    right: -4px;
+    width: calc(100% + 8px);
+    height: 100%;
+    font-size: 2rem;
+    animation: cursor 0.6s infinite, typing 25s steps(14) infinite;
+  }
+  @keyframes cursor{
+    to{
+        border-left: 2px solid rgb(255, 18, 18);
+    }
+  }
+  @keyframes words{
+    0%,
+    25%{
+        content: "Graphic Designer...";
+    }
+    26%,
+    50%{
+        content: "Photo Editor...";
+    }
+    51%,
+    75%{
+        content: "Creative Editor...";
+    }
+    76%,
+    100%{
+        content: "Passionate Designer...";
+    }
+  }
+  @keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width:0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+
+  }
+
+  .content{
+
+    align-items: center;
+    padding:100px;
+    font-size:xx-large;
+    background-color:black;
+    color: white;
+    height: 500px;
+  }
+  .content .pink{
+    color: rgb(255, 18, 18);
+  }
+  .contact .pink{
+    color: rgb(255, 18, 18);
+  }
+  .btnpos{
+    margin-top: 35px;
+  }
+  .btn{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    border-radius: 5%;
+    box-shadow: 0 0 15px white;
+    border-color:white;
+    color: white;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor:pointer;
+  }
+  .btn:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 0 29px white;
+  }
+  .icons{
+    position: absolute;
+   bottom: 0;
+   transition: 0.4s ease-in-out;
+  }
+  .icons img:hover{
+    height: 40px;
+  }
+  .skills{
+    background-color: black;
+    padding-bottom: 50px;
+  }
+  .skillscontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .skills h2{
+    color: black;
+    -webkit-text-stroke: 2px rgb(255, 18, 18);
+    margin-bottom: 30px;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 18, 18);
+  }
+  .skills h2:hover{
+    color: rgb(255, 18, 18);
+    cursor: pointer;
+  }
+  .services h2{
+    color: black;
+    -webkit-text-stroke: 2px rgb(255, 18, 18);
+    margin-bottom: 30px;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 18, 18);
+  }
+  .services h2:hover{
+    color: rgb(255, 18, 18);
+    cursor: pointer;
+  }
+  .skillbox{
+    background-color: white;
+    height: 190px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+  .skillbox:hover{
+    background: white;
+    color: black;
+    border: 1px solid rgb(255, 18, 18);
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgb(255, 18, 18);
+  }
+  .skillbox .skillinfo{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 12px 12px;
+  }
+  .skillinfo h4{
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 2;
+  }
+  .skillinfo p{
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.6;
+    max-height: 100px;
+    margin: auto;
+  }
+.contact{
+    background-color: black;
+    bottom: 0;
+}
+.contact h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+
+}
+.contact h2:hover{
+    font-size: 45px;;
+    transition: 0.5s ease-in-out;
+}
+.contact form{
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+}
+.contact form .inputbox{
+    justify-content: center;
+    margin-left: 150px;
+    gap: 40px;
+    float: left;
+}
+.contact form .inputbox input{
+    display: block;
+    align-items: center;
+    width: 300px;
+    padding: 6px;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 18, 18);
+    resize: none;
+    margin-bottom: 50px;
+}
+.contact form .inputgroup{
+    float: right;
+    margin-right: 150px;
+}
+.contact form textarea{
+    display: block;
+    align-items: center;
+    width:390px;
+    padding: 6px;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 7%;
+    border: 2px solid rgb(255, 18, 18);
+    margin: 20px 0;
+    margin-left: 20px;
+    resize: none;
+    margin-bottom: 50px;
+}
+.contact form .btn{
+    background-color: rgb(255, 18, 18);
+    box-shadow: 0 0 25px rgb(255, 18, 18);
+    border: transparent;
+    margin-top: 50px;
+    margin-right: 90px;
+    margin-bottom: 60px;
+}
+.contact form .btn:hover{
+    height: 50px;
+    transition: 0.6s ease-in-out;
+}
+
+.servicescontent{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.servicecontent .carousel{
+    margin-top: 90px;
+    margin-bottom: 92px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% /3)-15px);
+}
+.carousel .card{
+    list-style: none;
+    background: white;
+    border-radius: 8px;
+    height: 340px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgb(255, 18, 18);
+}
+.card img{
+    margin:0;
+    width: 270px;
+    height:340px;
+    object-fit:fill;
+}
+.card span{
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  transition: visibility 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+.card:hover img{
+  height: 460px;
+  width:350px;
+  overflow:visible;
+  box-shadow: 0 0 60px rgb(255, 18, 18);
+  display:flex;
+  overflow-x: visible;
+}
+.card:hover span{
+  position: absolute;
+  color: white;
+  font-weight: 700; 
+  margin-top: 410px;
+  visibility: visible;
+  display: inline;
+  width:350px;
+  text-align: center;
+}
